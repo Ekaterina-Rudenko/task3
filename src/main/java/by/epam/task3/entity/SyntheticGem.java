@@ -26,7 +26,7 @@ public class SyntheticGem extends AbstractGem {
         this.producer = producer;
     }
 
-    public LocalDate getDateOfProduction() {
+    public LocalDate getDateOfProduction(LocalDate parse) {
         return dateOfProduction;
     }
 
@@ -55,7 +55,12 @@ public class SyntheticGem extends AbstractGem {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("\nSyntheticGem{");
-        sb.append("producer=").append(producer);
+        sb.append(" name=").append(this.getName());
+        sb.append(", id=").append(this.getGemId());
+        sb.append(", preciousness=").append(this.getPreciousness());
+        sb.append(", ").append(this.getParameters());
+        sb.append(", gemValue=").append(this.getValue());
+        sb.append(", producer=").append(producer);
         sb.append(", dateOfProduction=").append(dateOfProduction);
         sb.append('}');
         return sb.toString();
