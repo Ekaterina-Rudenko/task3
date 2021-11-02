@@ -1,9 +1,6 @@
 package by.epam.task3.builder;
 
-import by.epam.task3.entity.AbstractGem;
-import by.epam.task3.entity.NaturalGem;
-import by.epam.task3.entity.SyntheticGem;
-import by.epam.task3.entity.VisualParameters;
+import by.epam.task3.entity.*;
 import by.epam.task3.entity.enums.Country;
 import by.epam.task3.entity.enums.GemColour;
 import by.epam.task3.entity.enums.PreciousnessType;
@@ -17,11 +14,11 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.Set;
 
 public class StaxGemBuilder extends AbstractGemBuilder {
     static Logger logger = LogManager.getLogger();
@@ -29,17 +26,21 @@ public class StaxGemBuilder extends AbstractGemBuilder {
     static final String UNDERSCORE = "_";
     static final String HYPHEN = "-";
 
-
     public StaxGemBuilder() {
         super();
         inputFactory = XMLInputFactory.newInstance();
     }
 
     @Override
+    public Set<AbstractGem> getGems() {
+        return super.getGems();
+    }
+
+    @Override
     public void buildGems(String filePath) throws GemException {
         XMLStreamReader reader;
         String name;
-        try (FileInputStream inputStream = new FileInputStream(new File(filePath))) {
+        try (FileInputStream inputStream = new FileInputStream(filePath)) {
             reader = inputFactory.createXMLStreamReader(inputStream);
             while (reader.hasNext()) {
                 int type = reader.next();
@@ -54,40 +55,19 @@ public class StaxGemBuilder extends AbstractGemBuilder {
                     }
                 }
             }
-        } catch (XMLStreamException | FileNotFoundException ex) {
-            logger.log(Level.ERROR, "Error in Stax: " + ex.getMessage());
-            throw new GemException("Error in Stax: " + ex.getMessage());
-        } catch (IOException ex) {
-            logger.log(Level.ERROR, "Error in Stax, check your filename: " + filePath);
-            throw new GemException("Error in Stax, check your filename: " + filePath);
+        } catch (XMLStreamException | FileNotFoundException e) {
+            logger.log(Level.ERROR, "Error in Stax: " + e.getMessage());
+            throw new GemException("Error in Stax: " + e.getMessage());
+        } catch (IOException e) {
+            logger.log(Level.ERROR, "Error in Stax, check your filename: " + filePath, e);
+            throw new GemException("Error in Stax, check your filename: " + filePath, e);
         }
-        logger.log(Level.INFO, "Minerals from stax builder are:\n" + gems);
+        logger.log(Level.INFO, "Gems from StAX builder are:" );
     }
 
     private NaturalGem buildNatural(XMLStreamReader reader) throws XMLStreamException {
         NaturalGem naturalGem = new NaturalGem();
-        build(reader, naturalGem);
-        naturalGem.setOriginCountry(Country.valueOf(getXMLText(reader).toUpperCase()));
-        naturalGem.setExtractionDate(LocalDate.parse(getXMLText(reader)));
-        return naturalGem;
-    }
-
-    private SyntheticGem buildSynthetic(XMLStreamReader reader) throws XMLStreamException {
-        SyntheticGem syntheticGem = new SyntheticGem();
-        build(reader, syntheticGem);
-        syntheticGem.getProducer().setCompany(getXMLText(reader));
-        syntheticGem.getProducer().setCountry(Country.valueOf(getXMLText(reader).toUpperCase()));
-        syntheticGem.setDateOfProduction(LocalDate.parse(getXMLText(reader)));
-        return syntheticGem;
-    }
-
-    private void build(XMLStreamReader reader, AbstractGem gem) throws XMLStreamException {
-        gem.setName(reader.getAttributeValue(null, GemXMLTag.NAME.toString()));
-        if (reader.getAttributeValue(1) != null) {
-            gem.setPreciousness(PreciousnessType.valueOf(reader.getAttributeValue(null, GemXMLTag.PRECIOUSNESS.toString()).toUpperCase()));
-        } else {
-            gem.setPreciousness(PreciousnessType.PRECIOUS);
-        }
+        fillAttribute(naturalGem, reader);
         String name;
         while (reader.hasNext()) {
             int type = reader.next();
@@ -95,30 +75,101 @@ public class StaxGemBuilder extends AbstractGemBuilder {
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
                     switch (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE))) {
+                        case ID:
+                            naturalGem.setGemId(getXMLText(reader));
+                            break;
                         case VISUAL_PARAMETERS:
-                            gem.setParameters(getParameters(reader));
+                            naturalGem.setParameters(getXMLVisualParameters(reader));
                             break;
                         case VALUE:
-                            gem.setValue(Double.parseDouble(getXMLText(reader)));
+                            naturalGem.setValue(Double.parseDouble(getXMLText(reader)));
                             break;
-                        case ID:
-                            gem.setGemId(getXMLText(reader));
+                        case ORIGIN_COUNTRY:
+                            Country country = Country.valueOf(getXMLText(reader).toUpperCase());
+                            naturalGem.setOriginCountry(country);
+                            break;
+                        case EXTRACTION_DATE:
+                            naturalGem.setExtractionDate(LocalDate.parse(getXMLText(reader)));
                             break;
                     }
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE)) == GemXMLTag.NATURAL ||
-                            GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE)) == GemXMLTag.SYNTHETIC) {
-                        return;
+                    if (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE)).equals(GemXMLTag.NATURAL)) {
+                        return naturalGem;
                     }
             }
         }
-        throw new XMLStreamException("Unknown element in tag <precious>");
+        throw new XMLStreamException("Unknown element in tag <natural>");
     }
 
-    private VisualParameters getParameters(XMLStreamReader reader) throws XMLStreamException {
-        VisualParameters parameters = new VisualParameters();
+    private SyntheticGem buildSynthetic(XMLStreamReader reader) throws XMLStreamException {
+        SyntheticGem syntheticGem = new SyntheticGem();
+        fillAttribute(syntheticGem, reader);
+        String name;
+        while (reader.hasNext()) {
+            int type = reader.next();
+            switch (type) {
+                case XMLStreamConstants.START_ELEMENT:
+                    name = reader.getLocalName();
+                    switch (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE))) {
+                        case ID:
+                            syntheticGem.setGemId(getXMLText(reader));
+                            break;
+                        case VISUAL_PARAMETERS:
+                            syntheticGem.setParameters(getXMLVisualParameters(reader));
+                            break;
+                        case VALUE:
+                            syntheticGem.setValue(Double.parseDouble(getXMLText(reader)));
+                            break;
+                        case PRODUCER:
+                            syntheticGem.setProducer(getXMLProducer(reader));
+                            break;
+                        case PRODUCTION_DATE:
+                            syntheticGem.setDateOfProduction(LocalDate.parse(getXMLText(reader)));
+                            break;
+                    }
+                    break;
+                case XMLStreamConstants.END_ELEMENT:
+                    name = reader.getLocalName();
+                    if (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE)).equals(GemXMLTag.SYNTHETIC)) {
+                        return syntheticGem;
+                    }
+            }
+        }
+        throw new XMLStreamException("Unknown element in tag <synthetic>");
+    }
+
+    private Producer getXMLProducer(XMLStreamReader reader) throws XMLStreamException {
+        Producer producer = new Producer();
+        int type;
+        String name;
+        while (reader.hasNext()) {
+            type = reader.next();
+            switch (type) {
+                case XMLStreamConstants.START_ELEMENT:
+                    name = reader.getLocalName();
+                    switch (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE))) {
+                        case COMPANY:
+                            producer.setCompany(getXMLText(reader));
+                            break;
+                        case HEADQUARTER:
+                            producer.setCountry(Country.valueOf(getXMLText(reader).toUpperCase()));
+                            break;
+                    }
+                    break;
+                case XMLStreamConstants.END_ELEMENT:
+                    name = reader.getLocalName();
+                    if (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE)).equals(GemXMLTag.PRODUCER)) {
+                        return producer;
+                    }
+            }
+        }
+        throw new XMLStreamException("Unknown element in tag <producer>");
+    }
+
+    private VisualParameters getXMLVisualParameters(XMLStreamReader reader) throws XMLStreamException {
+        VisualParameters visualParameters = new VisualParameters();
         int type;
         String name;
         while (reader.hasNext()) {
@@ -128,24 +179,32 @@ public class StaxGemBuilder extends AbstractGemBuilder {
                     name = reader.getLocalName();
                     switch (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE))) {
                         case COLOUR:
-                            parameters.setColour(GemColour.valueOf(getXMLText(reader).toUpperCase()));
+                            visualParameters.setColour(GemColour.valueOf(getXMLText(reader).toUpperCase()));
                             break;
                         case TRANSPARENCY:
-                            parameters.setTransparency(Integer.parseInt(getXMLText(reader)));
+                            visualParameters.setTransparency(Integer.parseInt(getXMLText((reader))));
                             break;
                         case CUT:
-                            parameters.setCut(Integer.parseInt(getXMLText(reader)));
+                            visualParameters.setCut(Integer.parseInt(getXMLText(reader)));
                             break;
                     }
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE)) == GemXMLTag.VISUAL_PARAMETERS) {
-                        return parameters;
+                    if (GemXMLTag.valueOf(name.toUpperCase().replace(HYPHEN, UNDERSCORE)).equals(GemXMLTag.VISUAL_PARAMETERS)) {
+                        return visualParameters;
                     }
             }
         }
         throw new XMLStreamException("Unknown element in tag <visual-parameters>");
+    }
+
+    private void fillAttribute(AbstractGem gem, XMLStreamReader reader) throws XMLStreamException {
+        gem.setName(reader.getAttributeValue(null, GemXMLTag.NAME.toString()));
+        PreciousnessType defaultPreciousness = PreciousnessType.PRECIOUS;
+        if(reader.hasNext()) {
+            gem.setPreciousness(PreciousnessType.valueOf(reader.getAttributeValue(1).toUpperCase()));
+        } else {gem.setPreciousness(defaultPreciousness);}
     }
 
     private String getXMLText(XMLStreamReader reader) throws XMLStreamException {
@@ -156,5 +215,4 @@ public class StaxGemBuilder extends AbstractGemBuilder {
         }
         return text;
     }
-
 }
