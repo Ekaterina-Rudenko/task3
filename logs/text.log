@@ -1,0 +1,994 @@
+2021-11-01 14:44:46 [main] ERROR by.epam.task3.validator.XMLValidator - File C:\Users\Ekaterina\IdeaProjects\task3\target\classes\data\gems.xml is not valid:
+org.xml.sax.SAXParseException: InvalidRegex: Pattern value '\p{Alpha}{3,30}' is not a valid regular expression. The reported error was: 'Unknown property.'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4254) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4237) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.reportSchemaError(XSDAbstractTraverser.java:866) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser.getSimpleType(XSDSimpleTypeTraverser.java:405) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser.traverseSimpleTypeDecl(XSDSimpleTypeTraverser.java:161) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser.traverseGlobal(XSDSimpleTypeTraverser.java:102) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseGlobalDecl(XSDHandler.java:1942) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getGlobalDecl(XSDHandler.java:1826) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser.traverseNamedAttr(XSDAttributeTraverser.java:327) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser.traverseLocal(XSDAttributeTraverser.java:113) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.traverseAttrsAndAttrGrps(XSDAbstractTraverser.java:760) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.processComplexContent(XSDComplexTypeTraverser.java:1123) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseComplexTypeDecl(XSDComplexTypeTraverser.java:335) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseGlobal(XSDComplexTypeTraverser.java:191) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseGlobalDecl(XSDHandler.java:1939) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getGlobalDecl(XSDHandler.java:1826) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseNamedElement(XSDElementTraverser.java:405) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseGlobal(XSDElementTraverser.java:242) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseSchemas(XSDHandler.java:1483) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:663) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:618) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:577) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:543) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:281) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:628) ~[?:?]
+	at by.epam.task3.validator.XMLValidator.validateXMLFile(BaseValidator.java:30) [classes/:?]
+	at by.epam.task3.main.Main.main(Main.java:16) [classes/:?]
+2021-11-01 14:48:48 [main] ERROR by.epam.task3.validator.XMLValidator - File C:\Users\Ekaterina\IdeaProjects\task3\target\classes\data\gems.xml is not valid:
+org.xml.sax.SAXParseException: src-attribute.2: : The property 'default' is present in attribute 'name', so the value of 'use' must be 'optional'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4254) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4237) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.reportSchemaError(XSDAbstractTraverser.java:866) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser.traverseLocal(XSDAttributeTraverser.java:165) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.traverseAttrsAndAttrGrps(XSDAbstractTraverser.java:760) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.processComplexContent(XSDComplexTypeTraverser.java:1123) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseComplexTypeDecl(XSDComplexTypeTraverser.java:335) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseGlobal(XSDComplexTypeTraverser.java:191) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseGlobalDecl(XSDHandler.java:1939) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getGlobalDecl(XSDHandler.java:1826) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseNamedElement(XSDElementTraverser.java:405) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseGlobal(XSDElementTraverser.java:242) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseSchemas(XSDHandler.java:1483) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:663) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:618) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:577) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:543) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:281) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:628) ~[?:?]
+	at by.epam.task3.validator.XMLValidator.validateXMLFile(BaseValidator.java:30) [classes/:?]
+	at by.epam.task3.main.Main.main(Main.java:16) [classes/:?]
+2021-11-01 14:51:00 [main] ERROR by.epam.task3.validator.XMLValidator - File C:\Users\Ekaterina\IdeaProjects\task3\target\classes\data\gems.xml is not valid:
+org.xml.sax.SAXParseException: e-props-correct.2: Invalid value constraint value '0' in element 'transparency'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4254) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4237) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.reportSchemaError(XSDAbstractTraverser.java:866) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseNamedElement(XSDElementTraverser.java:502) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseLocal(XSDElementTraverser.java:194) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseLocalElements(XSDHandler.java:3707) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:666) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:618) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:577) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:543) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:281) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:628) ~[?:?]
+	at by.epam.task3.validator.XMLValidator.validateXMLFile(BaseValidator.java:30) [classes/:?]
+	at by.epam.task3.main.Main.main(Main.java:16) [classes/:?]
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Parsing started
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - gems  xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns=http://www.example.com/gems xsi:schemaLocation=http://www.example.com/gems gems.xsd
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=ruby id=gem-1 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - red
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 30
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 10
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 3
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Madagascar
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2019-11-12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=diamond id=gem-2 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - white
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 80
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 5
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Sandvik AB
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Sweden
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2020-12-12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=sapphire id=gem-3 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - blue
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 80
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 9
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 5.6
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - India
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2018-09-11
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=emerald id=gem-4 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - green
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 45
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 8
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 4.5
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Columbia
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2017-10-10
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=tourmaline id=gem-5 preciousness=semiprecious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - pink
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 55
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 4
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 4
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Brazil
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2021-03-13
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=opal id=gem-6 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - yellow
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 20
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 8
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 7.5
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - USA
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2018-09-02
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=beryl id=gem-7 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - green
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 66
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 8
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 4.3
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Russia
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2020-01-10
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=alexandrite id=gem-8 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - purple
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 47
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 14
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 6
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Russia
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2020-07-02
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=amethyst id=gem-9 preciousness=semiprecious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - pink
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 26
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 4
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2.5
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Brazil
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2021-04-25
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=diamond id=gem-10 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - yellow
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 95
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 5.2
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Zhengzhou Diamond Ltd.
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - China
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2019-08-14
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=diamond id=gem-11 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - pink
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 89
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 11
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 3.1
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Applied Diamond Inc.
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - USA
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2017-09-09
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=ruby id=gem-12 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - red
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 65
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 8
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 4.5
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - ILJIN Holdings Co.,Ltd.
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - South_Korea
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2020-12-12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=emerald id=gem-13 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - green
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 77
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 10
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 7.5
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Tairus Co.Ltd.
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Russia
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2021-06-11
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=sapphire id=gem-14 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - blue
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 80
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 14
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 7.1
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - INSACO Inc.
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - USA
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2019-10-01
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=opal id=gem-15 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - white
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 22
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 10
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 7.8
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - KYOCERA Corporation
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Japan
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2021-02-23
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=diamond id=gem-16 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - pink
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 88
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 6.1
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - HEYARU GROUP
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Belgium
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2021-07-10
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  gems
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+Parsing ended
+2021-11-02 01:04:03 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 01:06:14 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 01:09:14 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 01:11:27 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 01:16:09 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 12:47:57 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 13:30:43 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 13:39:09 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 13:43:13 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 13:48:20 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 13:54:10 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 13:57:09 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 14:03:42 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:40:24 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[NaturalGem{naimsapphireidgem-3preciousnessTypepreciousparametersVisualParameters{colour=blue, transparency=80, cut=9}value5.6originCountry=Country{value='India'}, extractionDate=2018-09-11}, NaturalGem{naimamethystidgem-9preciousnessTypesemipreciousparametersVisualParameters{colour=pink, transparency=26, cut=4}value2.5originCountry=Country{value='Brazil'}, extractionDate=2021-04-25}, SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, NaturalGem{naimalexandriteidgem-8preciousnessTypepreciousparametersVisualParameters{colour=purple, transparency=47, cut=14}value6.0originCountry=Country{value='Russia'}, extractionDate=2020-07-02}, SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, NaturalGem{naimberylidgem-7preciousnessTypepreciousparametersVisualParameters{colour=green, transparency=66, cut=8}value4.3originCountry=Country{value='Russia'}, extractionDate=2020-01-10}, NaturalGem{naimrubyidgem-1preciousnessTypepreciousparametersVisualParameters{colour=red, transparency=30, cut=10}value3.0originCountry=Country{value='Madagascar'}, extractionDate=2019-11-12}, NaturalGem{naimemeraldidgem-4preciousnessTypepreciousparametersVisualParameters{colour=green, transparency=45, cut=8}value4.5originCountry=Country{value='Columbia'}, extractionDate=2017-10-10}, SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, NaturalGem{naimtourmalineidgem-5preciousnessTypesemipreciousparametersVisualParameters{colour=pink, transparency=55, cut=4}value4.0originCountry=Country{value='Brazil'}, extractionDate=2021-03-13}, NaturalGem{naimopalidgem-6preciousnessTypepreciousparametersVisualParameters{colour=yellow, transparency=20, cut=8}value7.5originCountry=Country{value='USA'}, extractionDate=2018-09-02}, SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:40:43 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[NaturalGem{naimsapphireidgem-3preciousnessTypepreciousparametersVisualParameters{colour=blue, transparency=80, cut=9}value5.6originCountry=Country{value='India'}, extractionDate=2018-09-11}, NaturalGem{naimamethystidgem-9preciousnessTypesemipreciousparametersVisualParameters{colour=pink, transparency=26, cut=4}value2.5originCountry=Country{value='Brazil'}, extractionDate=2021-04-25}, SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, NaturalGem{naimalexandriteidgem-8preciousnessTypepreciousparametersVisualParameters{colour=purple, transparency=47, cut=14}value6.0originCountry=Country{value='Russia'}, extractionDate=2020-07-02}, SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, NaturalGem{naimberylidgem-7preciousnessTypepreciousparametersVisualParameters{colour=green, transparency=66, cut=8}value4.3originCountry=Country{value='Russia'}, extractionDate=2020-01-10}, NaturalGem{naimrubyidgem-1preciousnessTypepreciousparametersVisualParameters{colour=red, transparency=30, cut=10}value3.0originCountry=Country{value='Madagascar'}, extractionDate=2019-11-12}, NaturalGem{naimemeraldidgem-4preciousnessTypepreciousparametersVisualParameters{colour=green, transparency=45, cut=8}value4.5originCountry=Country{value='Columbia'}, extractionDate=2017-10-10}, SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, NaturalGem{naimtourmalineidgem-5preciousnessTypesemipreciousparametersVisualParameters{colour=pink, transparency=55, cut=4}value4.0originCountry=Country{value='Brazil'}, extractionDate=2021-03-13}, NaturalGem{naimopalidgem-6preciousnessTypepreciousparametersVisualParameters{colour=yellow, transparency=20, cut=8}value7.5originCountry=Country{value='USA'}, extractionDate=2018-09-02}, SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:40:43 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:43:06 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[NaturalGem{ naim= sapphire id= gem-3 preciousnessType= precious parameters= VisualParameters{colour=blue, transparency=80, cut=9} value= 5.6 originCountry= Country{value='India'}, extractionDate=2018-09-11}, NaturalGem{ naim= amethyst id= gem-9 preciousnessType= semiprecious parameters= VisualParameters{colour=pink, transparency=26, cut=4} value= 2.5 originCountry= Country{value='Brazil'}, extractionDate=2021-04-25}, SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, NaturalGem{ naim= alexandrite id= gem-8 preciousnessType= precious parameters= VisualParameters{colour=purple, transparency=47, cut=14} value= 6.0 originCountry= Country{value='Russia'}, extractionDate=2020-07-02}, SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, NaturalGem{ naim= beryl id= gem-7 preciousnessType= precious parameters= VisualParameters{colour=green, transparency=66, cut=8} value= 4.3 originCountry= Country{value='Russia'}, extractionDate=2020-01-10}, NaturalGem{ naim= ruby id= gem-1 preciousnessType= precious parameters= VisualParameters{colour=red, transparency=30, cut=10} value= 3.0 originCountry= Country{value='Madagascar'}, extractionDate=2019-11-12}, NaturalGem{ naim= emerald id= gem-4 preciousnessType= precious parameters= VisualParameters{colour=green, transparency=45, cut=8} value= 4.5 originCountry= Country{value='Columbia'}, extractionDate=2017-10-10}, SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, NaturalGem{ naim= tourmaline id= gem-5 preciousnessType= semiprecious parameters= VisualParameters{colour=pink, transparency=55, cut=4} value= 4.0 originCountry= Country{value='Brazil'}, extractionDate=2021-03-13}, NaturalGem{ naim= opal id= gem-6 preciousnessType= precious parameters= VisualParameters{colour=yellow, transparency=20, cut=8} value= 7.5 originCountry= Country{value='USA'}, extractionDate=2018-09-02}, SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:43:06 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:44:31 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[NaturalGem{ naim=sapphire id=gem-3 preciousness=precious VisualParameters{colour=blue, transparency=80, cut=9} value=5.6 originCountry=Country{value='India'}, extractionDate=2018-09-11}, NaturalGem{ naim=amethyst id=gem-9 preciousness=semiprecious VisualParameters{colour=pink, transparency=26, cut=4} value=2.5 originCountry=Country{value='Brazil'}, extractionDate=2021-04-25}, SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, NaturalGem{ naim=alexandrite id=gem-8 preciousness=precious VisualParameters{colour=purple, transparency=47, cut=14} value=6.0 originCountry=Country{value='Russia'}, extractionDate=2020-07-02}, SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, NaturalGem{ naim=beryl id=gem-7 preciousness=precious VisualParameters{colour=green, transparency=66, cut=8} value=4.3 originCountry=Country{value='Russia'}, extractionDate=2020-01-10}, NaturalGem{ naim=ruby id=gem-1 preciousness=precious VisualParameters{colour=red, transparency=30, cut=10} value=3.0 originCountry=Country{value='Madagascar'}, extractionDate=2019-11-12}, NaturalGem{ naim=emerald id=gem-4 preciousness=precious VisualParameters{colour=green, transparency=45, cut=8} value=4.5 originCountry=Country{value='Columbia'}, extractionDate=2017-10-10}, SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, NaturalGem{ naim=tourmaline id=gem-5 preciousness=semiprecious VisualParameters{colour=pink, transparency=55, cut=4} value=4.0 originCountry=Country{value='Brazil'}, extractionDate=2021-03-13}, NaturalGem{ naim=opal id=gem-6 preciousness=precious VisualParameters{colour=yellow, transparency=20, cut=8} value=7.5 originCountry=Country{value='USA'}, extractionDate=2018-09-02}, SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:44:31 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:46:42 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ naim=sapphire id=gem-3 preciousness=precious VisualParameters{colour=blue, transparency=80, cut=9} 5.6 Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ naim=amethyst id=gem-9 preciousness=semiprecious VisualParameters{colour=pink, transparency=26, cut=4} 2.5 Country{value='Brazil'}, extractionDate=2021-04-25}, SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ naim=alexandrite id=gem-8 preciousness=precious VisualParameters{colour=purple, transparency=47, cut=14} 6.0 Country{value='Russia'}, extractionDate=2020-07-02}, SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ naim=beryl id=gem-7 preciousness=precious VisualParameters{colour=green, transparency=66, cut=8} 4.3 Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ naim=ruby id=gem-1 preciousness=precious VisualParameters{colour=red, transparency=30, cut=10} 3.0 Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ naim=emerald id=gem-4 preciousness=precious VisualParameters{colour=green, transparency=45, cut=8} 4.5 Country{value='Columbia'}, extractionDate=2017-10-10}, SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ naim=tourmaline id=gem-5 preciousness=semiprecious VisualParameters{colour=pink, transparency=55, cut=4} 4.0 Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ naim=opal id=gem-6 preciousness=precious VisualParameters{colour=yellow, transparency=20, cut=8} 7.5 Country{value='USA'}, extractionDate=2018-09-02}, SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:46:42 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:47:45 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ naim=sapphire id=gem-3 preciousness=precious VisualParameters{colour=blue, transparency=80, cut=9} 5.6 Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ naim=amethyst id=gem-9 preciousness=semiprecious VisualParameters{colour=pink, transparency=26, cut=4} 2.5 Country{value='Brazil'}, extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ naim=alexandrite id=gem-8 preciousness=precious VisualParameters{colour=purple, transparency=47, cut=14} 6.0 Country{value='Russia'}, extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ naim=beryl id=gem-7 preciousness=precious VisualParameters{colour=green, transparency=66, cut=8} 4.3 Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ naim=ruby id=gem-1 preciousness=precious VisualParameters{colour=red, transparency=30, cut=10} 3.0 Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ naim=emerald id=gem-4 preciousness=precious VisualParameters{colour=green, transparency=45, cut=8} 4.5 Country{value='Columbia'}, extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ naim=tourmaline id=gem-5 preciousness=semiprecious VisualParameters{colour=pink, transparency=55, cut=4} 4.0 Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ naim=opal id=gem-6 preciousness=precious VisualParameters{colour=yellow, transparency=20, cut=8} 7.5 Country{value='USA'}, extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:47:45 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:50:02 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ name=sapphire id=gem-3 preciousness=preciousVisualParameters{colour=blue, transparency=80, cut=9} gem value=5.6 origin country=Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ name=amethyst id=gem-9 preciousness=semipreciousVisualParameters{colour=pink, transparency=26, cut=4} gem value=2.5 origin country=Country{value='Brazil'}, extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ name=alexandrite id=gem-8 preciousness=preciousVisualParameters{colour=purple, transparency=47, cut=14} gem value=6.0 origin country=Country{value='Russia'}, extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ name=beryl id=gem-7 preciousness=preciousVisualParameters{colour=green, transparency=66, cut=8} gem value=4.3 origin country=Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ name=ruby id=gem-1 preciousness=preciousVisualParameters{colour=red, transparency=30, cut=10} gem value=3.0 origin country=Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ name=emerald id=gem-4 preciousness=preciousVisualParameters{colour=green, transparency=45, cut=8} gem value=4.5 origin country=Country{value='Columbia'}, extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ name=tourmaline id=gem-5 preciousness=semipreciousVisualParameters{colour=pink, transparency=55, cut=4} gem value=4.0 origin country=Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ name=opal id=gem-6 preciousness=preciousVisualParameters{colour=yellow, transparency=20, cut=8} gem value=7.5 origin country=Country{value='USA'}, extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:50:02 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:52:00 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ name=sapphire id=gem-3 preciousness=preciousVisualParameters{colour=blue, transparency=80, cut=9} gemValue=5.6 originCountry=Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ name=amethyst id=gem-9 preciousness=semipreciousVisualParameters{colour=pink, transparency=26, cut=4} gemValue=2.5 originCountry=Country{value='Brazil'}, extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ name=alexandrite id=gem-8 preciousness=preciousVisualParameters{colour=purple, transparency=47, cut=14} gemValue=6.0 originCountry=Country{value='Russia'}, extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ name=beryl id=gem-7 preciousness=preciousVisualParameters{colour=green, transparency=66, cut=8} gemValue=4.3 originCountry=Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ name=ruby id=gem-1 preciousness=preciousVisualParameters{colour=red, transparency=30, cut=10} gemValue=3.0 originCountry=Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ name=emerald id=gem-4 preciousness=preciousVisualParameters{colour=green, transparency=45, cut=8} gemValue=4.5 originCountry=Country{value='Columbia'}, extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ name=tourmaline id=gem-5 preciousness=semipreciousVisualParameters{colour=pink, transparency=55, cut=4} gemValue=4.0 originCountry=Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ name=opal id=gem-6 preciousness=preciousVisualParameters{colour=yellow, transparency=20, cut=8} gemValue=7.5 originCountry=Country{value='USA'}, extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:52:00 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:52:40 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ name=sapphire, id=gem-3, preciousness=preciousVisualParameters{colour=blue, transparency=80, cut=9}, gemValue=5.6, originCountry=Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ name=amethyst, id=gem-9, preciousness=semipreciousVisualParameters{colour=pink, transparency=26, cut=4}, gemValue=2.5, originCountry=Country{value='Brazil'}, extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ name=alexandrite, id=gem-8, preciousness=preciousVisualParameters{colour=purple, transparency=47, cut=14}, gemValue=6.0, originCountry=Country{value='Russia'}, extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ name=beryl, id=gem-7, preciousness=preciousVisualParameters{colour=green, transparency=66, cut=8}, gemValue=4.3, originCountry=Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ name=ruby, id=gem-1, preciousness=preciousVisualParameters{colour=red, transparency=30, cut=10}, gemValue=3.0, originCountry=Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ name=emerald, id=gem-4, preciousness=preciousVisualParameters{colour=green, transparency=45, cut=8}, gemValue=4.5, originCountry=Country{value='Columbia'}, extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ name=tourmaline, id=gem-5, preciousness=semipreciousVisualParameters{colour=pink, transparency=55, cut=4}, gemValue=4.0, originCountry=Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ name=opal, id=gem-6, preciousness=preciousVisualParameters{colour=yellow, transparency=20, cut=8}, gemValue=7.5, originCountry=Country{value='USA'}, extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:52:40 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:53:19 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ name=sapphire, id=gem-3, preciousness=preciousVisualParameters{colour=blue, transparency=80, cut=9} gemValue=5.6, originCountry=Country{value='India'} extractionDate=2018-09-11}, 
+NaturalGem{ name=amethyst, id=gem-9, preciousness=semipreciousVisualParameters{colour=pink, transparency=26, cut=4} gemValue=2.5, originCountry=Country{value='Brazil'} extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ name=alexandrite, id=gem-8, preciousness=preciousVisualParameters{colour=purple, transparency=47, cut=14} gemValue=6.0, originCountry=Country{value='Russia'} extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ name=beryl, id=gem-7, preciousness=preciousVisualParameters{colour=green, transparency=66, cut=8} gemValue=4.3, originCountry=Country{value='Russia'} extractionDate=2020-01-10}, 
+NaturalGem{ name=ruby, id=gem-1, preciousness=preciousVisualParameters{colour=red, transparency=30, cut=10} gemValue=3.0, originCountry=Country{value='Madagascar'} extractionDate=2019-11-12}, 
+NaturalGem{ name=emerald, id=gem-4, preciousness=preciousVisualParameters{colour=green, transparency=45, cut=8} gemValue=4.5, originCountry=Country{value='Columbia'} extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ name=tourmaline, id=gem-5, preciousness=semipreciousVisualParameters{colour=pink, transparency=55, cut=4} gemValue=4.0, originCountry=Country{value='Brazil'} extractionDate=2021-03-13}, 
+NaturalGem{ name=opal, id=gem-6, preciousness=preciousVisualParameters{colour=yellow, transparency=20, cut=8} gemValue=7.5, originCountry=Country{value='USA'} extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:53:19 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working

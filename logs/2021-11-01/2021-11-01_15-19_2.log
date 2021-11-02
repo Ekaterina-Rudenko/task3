@@ -1,0 +1,156 @@
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - red
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 30
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 10
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 3
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Madagascar
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2019-11-12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - synthetic  name=diamond id=gem-2 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - white
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 80
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 5
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - producer 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - company 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Sandvik AB
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  company
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - headquarter 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Sweden
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  headquarter
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  producer
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - production-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2020-12-12
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  production-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  synthetic
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=sapphire id=gem-3 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - blue
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 80
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 9
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - value 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 5.6
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  value
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - origin-country 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - India
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  origin-country
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - extraction-date 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 2018-09-11
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  extraction-date
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  natural
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=emerald id=gem-4 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - colour 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - green
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  colour
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - transparency 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 45
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  transparency
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+            
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - cut 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 8
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  cut
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - >
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler -  visual-parameters

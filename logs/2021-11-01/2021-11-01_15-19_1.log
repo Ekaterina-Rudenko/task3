@@ -1,0 +1,91 @@
+2021-11-01 14:44:46 [main] ERROR by.epam.task3.validator.XMLValidator - File C:\Users\Ekaterina\IdeaProjects\task3\target\classes\data\gems.xml is not valid:
+org.xml.sax.SAXParseException: InvalidRegex: Pattern value '\p{Alpha}{3,30}' is not a valid regular expression. The reported error was: 'Unknown property.'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4254) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4237) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.reportSchemaError(XSDAbstractTraverser.java:866) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser.getSimpleType(XSDSimpleTypeTraverser.java:405) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser.traverseSimpleTypeDecl(XSDSimpleTypeTraverser.java:161) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser.traverseGlobal(XSDSimpleTypeTraverser.java:102) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseGlobalDecl(XSDHandler.java:1942) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getGlobalDecl(XSDHandler.java:1826) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser.traverseNamedAttr(XSDAttributeTraverser.java:327) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser.traverseLocal(XSDAttributeTraverser.java:113) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.traverseAttrsAndAttrGrps(XSDAbstractTraverser.java:760) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.processComplexContent(XSDComplexTypeTraverser.java:1123) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseComplexTypeDecl(XSDComplexTypeTraverser.java:335) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseGlobal(XSDComplexTypeTraverser.java:191) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseGlobalDecl(XSDHandler.java:1939) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getGlobalDecl(XSDHandler.java:1826) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseNamedElement(XSDElementTraverser.java:405) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseGlobal(XSDElementTraverser.java:242) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseSchemas(XSDHandler.java:1483) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:663) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:618) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:577) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:543) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:281) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:628) ~[?:?]
+	at by.epam.task3.validator.XMLValidator.validateXMLFile(BaseValidator.java:30) [classes/:?]
+	at by.epam.task3.main.Main.main(Main.java:16) [classes/:?]
+2021-11-01 14:48:48 [main] ERROR by.epam.task3.validator.XMLValidator - File C:\Users\Ekaterina\IdeaProjects\task3\target\classes\data\gems.xml is not valid:
+org.xml.sax.SAXParseException: src-attribute.2: : The property 'default' is present in attribute 'name', so the value of 'use' must be 'optional'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4254) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4237) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.reportSchemaError(XSDAbstractTraverser.java:866) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser.traverseLocal(XSDAttributeTraverser.java:165) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.traverseAttrsAndAttrGrps(XSDAbstractTraverser.java:760) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.processComplexContent(XSDComplexTypeTraverser.java:1123) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseComplexTypeDecl(XSDComplexTypeTraverser.java:335) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDComplexTypeTraverser.traverseGlobal(XSDComplexTypeTraverser.java:191) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseGlobalDecl(XSDHandler.java:1939) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getGlobalDecl(XSDHandler.java:1826) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseNamedElement(XSDElementTraverser.java:405) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseGlobal(XSDElementTraverser.java:242) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseSchemas(XSDHandler.java:1483) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:663) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:618) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:577) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:543) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:281) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:628) ~[?:?]
+	at by.epam.task3.validator.XMLValidator.validateXMLFile(BaseValidator.java:30) [classes/:?]
+	at by.epam.task3.main.Main.main(Main.java:16) [classes/:?]
+2021-11-01 14:51:00 [main] ERROR by.epam.task3.validator.XMLValidator - File C:\Users\Ekaterina\IdeaProjects\task3\target\classes\data\gems.xml is not valid:
+org.xml.sax.SAXParseException: e-props-correct.2: Invalid value constraint value '0' in element 'transparency'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4254) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4237) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser.reportSchemaError(XSDAbstractTraverser.java:866) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseNamedElement(XSDElementTraverser.java:502) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseLocal(XSDElementTraverser.java:194) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseLocalElements(XSDHandler.java:3707) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:666) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:618) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:577) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:543) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:281) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:628) ~[?:?]
+	at by.epam.task3.validator.XMLValidator.validateXMLFile(BaseValidator.java:30) [classes/:?]
+	at by.epam.task3.main.Main.main(Main.java:16) [classes/:?]
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - Parsing started
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - gems  xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns=http://www.example.com/gems xsi:schemaLocation=http://www.example.com/gems gems.xsd
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+
+    
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - natural  name=ruby id=gem-1 preciousness=precious
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+        
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - visual-parameters 
+2021-11-01 15:19:10 [main] INFO  by.epam.task3.handler.ConsoleGemsHandler - 
+            

@@ -1,0 +1,68 @@
+2021-11-02 16:44:31 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:46:42 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ naim=sapphire id=gem-3 preciousness=precious VisualParameters{colour=blue, transparency=80, cut=9} 5.6 Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ naim=amethyst id=gem-9 preciousness=semiprecious VisualParameters{colour=pink, transparency=26, cut=4} 2.5 Country{value='Brazil'}, extractionDate=2021-04-25}, SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ naim=alexandrite id=gem-8 preciousness=precious VisualParameters{colour=purple, transparency=47, cut=14} 6.0 Country{value='Russia'}, extractionDate=2020-07-02}, SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ naim=beryl id=gem-7 preciousness=precious VisualParameters{colour=green, transparency=66, cut=8} 4.3 Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ naim=ruby id=gem-1 preciousness=precious VisualParameters{colour=red, transparency=30, cut=10} 3.0 Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ naim=emerald id=gem-4 preciousness=precious VisualParameters{colour=green, transparency=45, cut=8} 4.5 Country{value='Columbia'}, extractionDate=2017-10-10}, SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ naim=tourmaline id=gem-5 preciousness=semiprecious VisualParameters{colour=pink, transparency=55, cut=4} 4.0 Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ naim=opal id=gem-6 preciousness=precious VisualParameters{colour=yellow, transparency=20, cut=8} 7.5 Country{value='USA'}, extractionDate=2018-09-02}, SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:46:42 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:47:45 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ naim=sapphire id=gem-3 preciousness=precious VisualParameters{colour=blue, transparency=80, cut=9} 5.6 Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ naim=amethyst id=gem-9 preciousness=semiprecious VisualParameters{colour=pink, transparency=26, cut=4} 2.5 Country{value='Brazil'}, extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ naim=alexandrite id=gem-8 preciousness=precious VisualParameters{colour=purple, transparency=47, cut=14} 6.0 Country{value='Russia'}, extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ naim=beryl id=gem-7 preciousness=precious VisualParameters{colour=green, transparency=66, cut=8} 4.3 Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ naim=ruby id=gem-1 preciousness=precious VisualParameters{colour=red, transparency=30, cut=10} 3.0 Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ naim=emerald id=gem-4 preciousness=precious VisualParameters{colour=green, transparency=45, cut=8} 4.5 Country{value='Columbia'}, extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ naim=tourmaline id=gem-5 preciousness=semiprecious VisualParameters{colour=pink, transparency=55, cut=4} 4.0 Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ naim=opal id=gem-6 preciousness=precious VisualParameters{colour=yellow, transparency=20, cut=8} 7.5 Country{value='USA'}, extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:47:45 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:50:02 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ name=sapphire id=gem-3 preciousness=preciousVisualParameters{colour=blue, transparency=80, cut=9} gem value=5.6 origin country=Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ name=amethyst id=gem-9 preciousness=semipreciousVisualParameters{colour=pink, transparency=26, cut=4} gem value=2.5 origin country=Country{value='Brazil'}, extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ name=alexandrite id=gem-8 preciousness=preciousVisualParameters{colour=purple, transparency=47, cut=14} gem value=6.0 origin country=Country{value='Russia'}, extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ name=beryl id=gem-7 preciousness=preciousVisualParameters{colour=green, transparency=66, cut=8} gem value=4.3 origin country=Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ name=ruby id=gem-1 preciousness=preciousVisualParameters{colour=red, transparency=30, cut=10} gem value=3.0 origin country=Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ name=emerald id=gem-4 preciousness=preciousVisualParameters{colour=green, transparency=45, cut=8} gem value=4.5 origin country=Country{value='Columbia'}, extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ name=tourmaline id=gem-5 preciousness=semipreciousVisualParameters{colour=pink, transparency=55, cut=4} gem value=4.0 origin country=Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ name=opal id=gem-6 preciousness=preciousVisualParameters{colour=yellow, transparency=20, cut=8} gem value=7.5 origin country=Country{value='USA'}, extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
+2021-11-02 16:50:02 [main] INFO  by.epam.task3.handler.GemHandler - Gems SAX handler starts working
+2021-11-02 16:52:00 [main] INFO  by.epam.task3.builder.DomGemBuilder - Gems from dom builder are:
+[
+NaturalGem{ name=sapphire id=gem-3 preciousness=preciousVisualParameters{colour=blue, transparency=80, cut=9} gemValue=5.6 originCountry=Country{value='India'}, extractionDate=2018-09-11}, 
+NaturalGem{ name=amethyst id=gem-9 preciousness=semipreciousVisualParameters{colour=pink, transparency=26, cut=4} gemValue=2.5 originCountry=Country{value='Brazil'}, extractionDate=2021-04-25}, 
+SyntheticGem{producer=Producer{company='KYOCERA Corporation', country=Country{value='Japan'}}, dateOfProduction=2021-02-23}, 
+NaturalGem{ name=alexandrite id=gem-8 preciousness=preciousVisualParameters{colour=purple, transparency=47, cut=14} gemValue=6.0 originCountry=Country{value='Russia'}, extractionDate=2020-07-02}, 
+SyntheticGem{producer=Producer{company='Sandvik AB', country=Country{value='Sweden'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='ILJIN Holdings Co.,Ltd.', country=Country{value='South_Korea'}}, dateOfProduction=2020-12-12}, 
+SyntheticGem{producer=Producer{company='Zhengzhou Diamond Ltd.', country=Country{value='China'}}, dateOfProduction=2019-08-14}, 
+NaturalGem{ name=beryl id=gem-7 preciousness=preciousVisualParameters{colour=green, transparency=66, cut=8} gemValue=4.3 originCountry=Country{value='Russia'}, extractionDate=2020-01-10}, 
+NaturalGem{ name=ruby id=gem-1 preciousness=preciousVisualParameters{colour=red, transparency=30, cut=10} gemValue=3.0 originCountry=Country{value='Madagascar'}, extractionDate=2019-11-12}, 
+NaturalGem{ name=emerald id=gem-4 preciousness=preciousVisualParameters{colour=green, transparency=45, cut=8} gemValue=4.5 originCountry=Country{value='Columbia'}, extractionDate=2017-10-10}, 
+SyntheticGem{producer=Producer{company='Applied Diamond Inc.', country=Country{value='USA'}}, dateOfProduction=2017-09-09}, 
+SyntheticGem{producer=Producer{company='HEYARU GROUP', country=Country{value='Belgium'}}, dateOfProduction=2021-07-10}, 
+NaturalGem{ name=tourmaline id=gem-5 preciousness=semipreciousVisualParameters{colour=pink, transparency=55, cut=4} gemValue=4.0 originCountry=Country{value='Brazil'}, extractionDate=2021-03-13}, 
+NaturalGem{ name=opal id=gem-6 preciousness=preciousVisualParameters{colour=yellow, transparency=20, cut=8} gemValue=7.5 originCountry=Country{value='USA'}, extractionDate=2018-09-02}, 
+SyntheticGem{producer=Producer{company='Tairus Co.Ltd.', country=Country{value='Russia'}}, dateOfProduction=2021-06-11}, 
+SyntheticGem{producer=Producer{company='INSACO Inc.', country=Country{value='USA'}}, dateOfProduction=2019-10-01}]
