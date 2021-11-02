@@ -18,13 +18,11 @@ import java.util.Set;
 
 public class GemHandler extends DefaultHandler {
     static Logger logger = LogManager.getLogger();
-    private static final String DELIMITER_DASH = "-";
+    private static final String DELIMITER_HYPHEN = "-";
     private static final String DELIMITER_UNDERSCORE = "_";
-    private static final String ELEMENT_GEM = "gem";
 
     private Set<AbstractGem> gems;
     private AbstractGem currentGem;
-    private String currentElement;
     private GemXMLTag currentXmlTag;
     private EnumSet<GemXMLTag> withText;
 
@@ -144,6 +142,6 @@ public class GemHandler extends DefaultHandler {
     }
 
     private String toConstantName(String name) {
-        return name.replace(DELIMITER_DASH, DELIMITER_UNDERSCORE).toUpperCase();
+        return name.replace(DELIMITER_HYPHEN, DELIMITER_UNDERSCORE).toUpperCase();
     }
 }
