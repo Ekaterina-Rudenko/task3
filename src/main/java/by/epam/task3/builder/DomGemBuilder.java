@@ -6,6 +6,7 @@ import by.epam.task3.entity.enums.GemColour;
 import by.epam.task3.entity.enums.PreciousnessType;
 import by.epam.task3.exception.GemException;
 import by.epam.task3.handler.GemXMLTag;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.w3c.dom.Document;
@@ -36,7 +37,7 @@ public class DomGemBuilder extends AbstractGemBuilder {
         try {
             documentBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException ex) {
-            logger.error("Error in Dom: " + ex.getMessage());
+            logger.error("Error in DOM parser: " + ex.getMessage());
         }
     }
 
@@ -63,29 +64,31 @@ public class DomGemBuilder extends AbstractGemBuilder {
             throw new GemException("Error in Dom, check your filename: " + filename, ex);
         } catch (SAXException ex) {
             logger.error("Error in Dom: " + ex.getMessage());
-            throw new GemException("Error in Dom: " + ex.getMessage());
+            throw new GemException("Error in Dom Parser: " + ex.getMessage());
         }
-        logger.info("Gems from dom builder are:\n" + gems);
+        logger.log(Level.INFO, "Gems from DOM builder are:" );
     }
 
     private NaturalGem buildNaturals(Element element) {
         NaturalGem naturalGem = new NaturalGem();
-
-        naturalGem.setOriginCountry(Country.valueOf(getElementTextContent(element, GemXMLTag.ORIGIN_COUNTRY.toString()).toUpperCase()));
-        naturalGem.setExtractionDate(LocalDate.parse(getElementTextContent(element, GemXMLTag.EXTRACTION_DATE.toString())));
-
+        String countryValue = getElementTextContent(element, GemXMLTag.ORIGIN_COUNTRY.toString()).toUpperCase();
+        naturalGem.setOriginCountry(Country.valueOf(countryValue));
+        String dateValue = getElementTextContent(element, GemXMLTag.EXTRACTION_DATE.toString());
+        naturalGem.setExtractionDate(LocalDate.parse(dateValue));
         build(element, naturalGem);
         return naturalGem;
     }
 
     private SyntheticGem buildSynthetics(Element element) {
         SyntheticGem syntheticGem = new SyntheticGem();
-
         Producer producer = syntheticGem.getProducer();
         Element producerElement = (Element) element.getElementsByTagName(GemXMLTag.PRODUCER.toString()).item(0);
-        producer.setCompany(getElementTextContent(producerElement, GemXMLTag.COMPANY.toString()));
-        producer.setCountry(Country.valueOf(getElementTextContent(producerElement, GemXMLTag.HEADQUARTER.toString()).toUpperCase()));
-        syntheticGem.setDateOfProduction(LocalDate.parse(getElementTextContent(element, GemXMLTag.PRODUCTION_DATE.toString())));
+        String company = getElementTextContent(producerElement, GemXMLTag.COMPANY.toString());
+        producer.setCompany(company);
+        Country country = Country.valueOf(getElementTextContent(producerElement, GemXMLTag.HEADQUARTER.toString()).toUpperCase());
+        producer.setCountry(country);
+        LocalDate localDate = LocalDate.parse(getElementTextContent(element, GemXMLTag.PRODUCTION_DATE.toString()));
+        syntheticGem.setDateOfProduction(localDate);
         build(element, syntheticGem);
         return syntheticGem;
     }
@@ -93,7 +96,8 @@ public class DomGemBuilder extends AbstractGemBuilder {
     private void build(Element element, AbstractGem gem) {
         gem.setName(element.getAttribute(GemXMLTag.NAME.toString()));
         if (element.hasAttribute(GemXMLTag.PRECIOUSNESS.toString())) {
-            gem.setPreciousness(PreciousnessType.valueOf(element.getAttribute(GemXMLTag.PRECIOUSNESS.toString()).toUpperCase()));
+            String preciousnessValue = element.getAttribute(GemXMLTag.PRECIOUSNESS.toString()).toUpperCase();
+            gem.setPreciousness(PreciousnessType.valueOf(preciousnessValue));
         } else {
             gem.setPreciousness(PreciousnessType.PRECIOUS);
         }
@@ -101,12 +105,13 @@ public class DomGemBuilder extends AbstractGemBuilder {
 
         VisualParameters parameter = gem.getParameters();
         Element visualElement = (Element) element.getElementsByTagName(GemXMLTag.VISUAL_PARAMETERS.toString()).item(0);
-        parameter.setColour(GemColour.valueOf(getElementTextContent(visualElement, GemXMLTag.COLOUR.toString()).toUpperCase()));
-        parameter.setTransparency(Integer.parseInt(getElementTextContent(visualElement, GemXMLTag.TRANSPARENCY.toString())));
-        parameter.setCut(Integer.parseInt(getElementTextContent(visualElement, GemXMLTag.CUT.toString())));
-
+        String colourValue = getElementTextContent(visualElement, GemXMLTag.COLOUR.toString()).toUpperCase();
+        parameter.setColour(GemColour.valueOf(colourValue));
+        String transparencyValue = getElementTextContent(visualElement, GemXMLTag.TRANSPARENCY.toString());
+        parameter.setTransparency(Integer.parseInt(transparencyValue));
+        String cutValue = getElementTextContent(visualElement, GemXMLTag.CUT.toString());
+        parameter.setCut(Integer.parseInt(cutValue));
         gem.setValue(Double.parseDouble(getElementTextContent(element, GemXMLTag.VALUE.toString())));
-
     }
 
     private static String getElementTextContent(Element element, String elementName) {
