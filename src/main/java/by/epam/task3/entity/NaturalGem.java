@@ -63,7 +63,7 @@ public class NaturalGem extends AbstractGem {
         sb.append(" name=").append(this.getName());
         sb.append(", id=").append(this.getGemId());
         sb.append(", preciousness=").append(this.getPreciousness());
-        sb.append(this.getParameters());
+        sb.append(", ").append(this.getParameters());
         sb.append(" gemValue=").append(this.getValue());
         sb.append(", originCountry=").append(originCountry);
         sb.append(" extractionDate=").append(extractionDate);
