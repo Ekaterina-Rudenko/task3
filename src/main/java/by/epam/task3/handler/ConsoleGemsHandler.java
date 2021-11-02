@@ -7,30 +7,34 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class ConsoleGemsHandler extends DefaultHandler {
     static Logger logger = LogManager.getLogger();
+
     @Override
-    public void startDocument(){
-        System.out.println("Parsing started");
-    }
-    @Override
-    public void startElement(String uri, String localName, String qName, Attributes attr){
-        String tagData = qName + " ";
-        for(int i = 0; i < attr.getLength(); i++){
-            tagData += " " + attr.getQName(i) + "=" + attr.getValue(i);
-        }
-        System.out.print(tagData);
+    public void startDocument() {
+        logger.info("Parsing started");
     }
 
     @Override
-    public void characters(char[] ch, int start, int length){
-        System.out.print(new String(ch, start, length));
+    public void startElement(String uri, String localName, String qName, Attributes attr) {
+        String tagData = qName + " ";
+        for (int i = 0; i < attr.getLength(); i++) {
+            tagData += " " + attr.getQName(i) + "=" + attr.getValue(i);
+        }
+        logger.info(tagData);
     }
+
     @Override
-    public void endElement(String uri, String localName, String qName){
-        System.out.print(" " + qName);
+    public void characters(char[] ch, int start, int length) {
+        logger.info(new String(ch, start, length));
     }
+
     @Override
-    public void endDocument(){
-        System.out.println("\nParsing ended");
+    public void endElement(String uri, String localName, String qName) {
+        logger.info(" " + qName);
+    }
+
+    @Override
+    public void endDocument() {
+        logger.info("\nParsing ended");
     }
 
 }
