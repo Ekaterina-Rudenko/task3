@@ -1,9 +1,9 @@
 package by.epam.task3.builder;
 
 import by.epam.task3.entity.*;
-import by.epam.task3.entity.enums.Country;
-import by.epam.task3.entity.enums.GemColour;
-import by.epam.task3.entity.enums.PreciousnessType;
+import by.epam.task3.entity.Country;
+import by.epam.task3.entity.GemColour;
+import by.epam.task3.entity.PreciousnessType;
 import by.epam.task3.exception.GemException;
 import by.epam.task3.handler.GemXMLTag;
 import org.apache.logging.log4j.Level;
