@@ -1,7 +1,5 @@
 package by.epam.task3.entity;
 
-import by.epam.task3.entity.enums.PreciousnessType;
-
 public abstract class AbstractGem {
 
     private String name;
