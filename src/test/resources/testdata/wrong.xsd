@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/test"
+        xmlns:g="http://www.example.com/test"
+        elementFormDefault="qualified">
+
+    <element name="gem" type="g:AbstractGemType" abstract="true"/>
+    <element name="natural" type="g:NaturalGemType" substitutionGroup="g:gem"/>
+    <element name="synthetic" type="g:SyntheticGemType" substitutionGroup="g:gem"/>
+
+    <element name="testGems">
+        <complexType>
+            <sequence>
+                <element ref="g:gem"
+                         minOccurs="16"
+                         maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="AbstractGemType">
+        <sequence>
+            <element name="id" type="g:GemId"/>
+            <element name="visual-parameters" type="g:VisualParameters"/>
+            <element name="value" type="g:Value"/>
+        </sequence>
+        <attribute name="name" type="g:Name" use="required"/>
+        <attribute name="preciousness" type="g:Preciousness" use="optional" default="precious"/>
+    </complexType>
+
+    <simpleType name="Name">
+        <restriction base="string">
+            <pattern value="[a-zA-Z]{3,30}"/>
+        </restriction>
+
+    </simpleType>
+
+    <simpleType name="GemId">
+        <restriction base="ID">
+            <pattern value="gem-\d{1,10}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Preciousness">
+        <restriction base="string">
+            <enumeration value="precious"/>
+            <enumeration value="semiprecious"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="VisualParameters" mixed="true">
+        <sequence>
+            <element name="colour" type="g:Colour" default="colourless"/>
+            <element name="transparency" type="g:Transparency" default="0"/>
+            <element name="cut" type="g:Cut" default="4"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="Colour">
+        <restriction base="string">
+            <enumeration value="white"/>
+            <enumeration value="green"/>
+            <enumeration value="red"/>
+            <enumeration value="blue"/>
+            <enumeration value="yellow"/>
+            <enumeration value="black"/>
+            <enumeration value="pink"/>
+            <enumeration value="purple"/>
+            <enumeration value="colourless"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Transparency">
+        <restriction base="integer">
+            <minInclusive value="0"/>
+            <maxInclusive value="100"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Cut">
+        <restriction base="integer">
+            <minInclusive value="4"/>
+            <maxInclusive value="15"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Value">
+        <restriction base="double">
+            <minExclusive value="0"/>
+            <pattern value="((0|[1-9][0-9]*)(\.[0-9]*)?|\.[0-9]+)\s*"/>
+        </restriction>
+    </simpleType>
+
+
+    <complexType name="NaturalGemType">
+        <complexContent>
+            <extension base="g:AbstractGemType">
+                <sequence>
+                    <element name="origin-country" type="g:Country"/>
+                    <element name="extraction-date" type="date"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="SyntheticGemType">
+        <complexContent>
+            <extension base="g:AbstractGemType">
+                <sequence>
+                    <element name="producer" type="g:Producer"/>
+                    <element name="production-date" type="date"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+
+    <complexType name="Producer">
+        <sequence>
+            <element name="company" type="string"/>
+            <element name="headquarter" type="g:Country"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="Country">
+        <restriction base="string">
+            <enumeration value="USA"/>
+            <enumeration value="Russia"/>
+            <enumeration value="South_Africa"/>
+            <enumeration value="Angola"/>
+            <enumeration value="Japan"/>
+            <enumeration value="Canada"/>
+            <enumeration value="Brazil"/>
+            <enumeration value="Venezuela"/>
+            <enumeration value="Australia"/>
+            <enumeration value="Switzerland"/>
+            <enumeration value="India"/>
+            <enumeration value="Madagascar"/>
+            <enumeration value="Columbia"/>
+            <enumeration value="Sweden"/>
+            <enumeration value="China"/>
+            <enumeration value="Belgium"/>
+            <enumeration value="South_Korea"/>
+        </restriction>
+    </simpleType>
+
+</schema>

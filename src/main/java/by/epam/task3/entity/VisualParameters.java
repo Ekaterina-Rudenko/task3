@@ -1,7 +1,5 @@
 package by.epam.task3.entity;
 
-import by.epam.task3.entity.enums.GemColour;
-
 public class VisualParameters {
     public static final int DEFAULT_TRANSPARENCY = 0;
     public static final int DEFAULT_CUT = 4;

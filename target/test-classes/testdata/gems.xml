@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.example.com/gems"
+      xsi:schemaLocation="http://www.example.com/gems gems.xsd">
+
+    <natural name="ruby" preciousness="precious">
+        <id>gem-1</id>
+        <visual-parameters>
+            <colour>red</colour>
+            <transparency>30</transparency>
+            <cut>10</cut>>
+        </visual-parameters>
+        <value>3</value>
+        <origin-country>Madagascar</origin-country>
+        <extraction-date>2019-11-12</extraction-date>
+    </natural>
+
+    <synthetic name="diamond" preciousness="precious">
+        <id>gem-2</id>
+        <visual-parameters>
+            <colour>white</colour>
+            <transparency>80</transparency>
+            <cut>12</cut>
+        </visual-parameters>
+        <value>5</value>
+        <producer>
+            <company>Sandvik AB</company>
+            <headquarter>Sweden</headquarter>
+        </producer>
+        <production-date>2020-12-12</production-date>
+    </synthetic>
+
+    <natural name="sapphire" preciousness="precious">
+        <id>gem-3</id>
+        <visual-parameters>
+            <colour>blue</colour>
+            <transparency>80</transparency>
+            <cut>9</cut>>
+        </visual-parameters>
+        <value>5.6</value>
+        <origin-country>India</origin-country>
+        <extraction-date>2018-09-11</extraction-date>
+    </natural>
+
+    <natural name="emerald" preciousness="precious">
+        <id>gem-4</id>
+        <visual-parameters>
+            <colour>green</colour>
+            <transparency>45</transparency>
+            <cut>8</cut>
+        </visual-parameters>
+        <value>4.5</value>
+        <origin-country>Columbia</origin-country>
+        <extraction-date>2017-10-10</extraction-date>
+    </natural>
+
+    <natural name="tourmaline" preciousness="semiprecious">
+        <id>gem-5</id>
+        <visual-parameters>
+            <colour>pink</colour>
+            <transparency>55</transparency>
+            <cut>4</cut>
+        </visual-parameters>
+        <value>4</value>
+        <origin-country>Brazil</origin-country>
+        <extraction-date>2021-03-13</extraction-date>
+    </natural>
+
+    <natural name="opal" preciousness="precious">
+        <id>gem-6</id>
+        <visual-parameters>
+            <colour>yellow</colour>
+            <transparency>20</transparency>
+            <cut>8</cut>
+        </visual-parameters>
+        <value>7.5</value>
+        <origin-country>USA</origin-country>
+        <extraction-date>2018-09-02</extraction-date>
+    </natural>
+
+    <natural name="beryl" preciousness="precious">
+        <id>gem-7</id>
+        <visual-parameters>
+            <colour>green</colour>
+            <transparency>66</transparency>
+            <cut>8</cut>
+        </visual-parameters>
+        <value>4.3</value>
+        <origin-country>Russia</origin-country>
+        <extraction-date>2020-01-10</extraction-date>
+    </natural>
+
+    <natural name="alexandrite" preciousness="precious">
+        <id>gem-8</id>
+        <visual-parameters>
+            <colour>purple</colour>
+            <transparency>47</transparency>
+            <cut>14</cut>
+        </visual-parameters>
+        <value>6</value>
+        <origin-country>Russia</origin-country>
+        <extraction-date>2020-07-02</extraction-date>
+    </natural>
+
+    <natural name="amethyst" preciousness="semiprecious">
+        <id>gem-9</id>
+        <visual-parameters>
+            <colour>pink</colour>
+            <transparency>26</transparency>
+            <cut>4</cut>
+        </visual-parameters>
+        <value>2.5</value>
+        <origin-country>Brazil</origin-country>
+        <extraction-date>2021-04-25</extraction-date>
+    </natural>
+
+    <synthetic name="diamond" preciousness="precious">
+        <id>gem-10</id>
+        <visual-parameters>
+            <colour>yellow</colour>
+            <transparency>95</transparency>
+            <cut>12</cut>
+        </visual-parameters>
+        <value>5.2</value>
+        <producer>
+            <company>Zhengzhou Diamond Ltd.</company>
+            <headquarter>China</headquarter>
+        </producer>
+        <production-date>2019-08-14</production-date>
+    </synthetic>
+
+    <synthetic name="diamond" preciousness="precious">
+        <id>gem-11</id>
+        <visual-parameters>
+            <colour>pink</colour>
+            <transparency>89</transparency>
+            <cut>11</cut>
+        </visual-parameters>
+        <value>3.1</value>
+        <producer>
+            <company>Applied Diamond Inc.</company>
+            <headquarter>USA</headquarter>
+        </producer>
+        <production-date>2017-09-09</production-date>
+    </synthetic>
+
+    <synthetic name="ruby" preciousness="precious">
+        <id>gem-12</id>
+        <visual-parameters>
+            <colour>red</colour>
+            <transparency>65</transparency>
+            <cut>8</cut>
+        </visual-parameters>
+        <value>4.5</value>
+        <producer>
+            <company>ILJIN Holdings Co.,Ltd.</company>
+            <headquarter>South_Korea</headquarter>
+        </producer>
+        <production-date>2020-12-12</production-date>
+    </synthetic>
+
+    <synthetic name="emerald" preciousness="precious">
+        <id>gem-13</id>
+        <visual-parameters>
+            <colour>green</colour>
+            <transparency>77</transparency>
+            <cut>10</cut>
+        </visual-parameters>
+        <value>7.5</value>
+        <producer>
+            <company>Tairus Co.Ltd.</company>
+            <headquarter>Russia</headquarter>
+        </producer>
+        <production-date>2021-06-11</production-date>
+    </synthetic>
+
+    <synthetic name="sapphire" preciousness="precious">
+        <id>gem-14</id>
+        <visual-parameters>
+            <colour>blue</colour>
+            <transparency>80</transparency>
+            <cut>14</cut>
+        </visual-parameters>
+        <value>7.1</value>
+        <producer>
+            <company>INSACO Inc.</company>
+            <headquarter>USA</headquarter>
+        </producer>
+        <production-date>2019-10-01</production-date>
+    </synthetic>
+
+    <synthetic name="opal" preciousness="precious">
+        <id>gem-15</id>
+        <visual-parameters>
+            <colour>white</colour>
+            <transparency>22</transparency>
+            <cut>10</cut>
+        </visual-parameters>
+        <value>7.8</value>
+        <producer>
+            <company>KYOCERA Corporation</company>
+            <headquarter>Japan</headquarter>
+        </producer>
+        <production-date>2021-02-23</production-date>
+    </synthetic>
+
+    <synthetic name="diamond" preciousness="precious">
+        <id>gem-16</id>
+        <visual-parameters>
+            <colour>pink</colour>
+            <transparency>88</transparency>
+            <cut>12</cut>
+        </visual-parameters>
+        <value>6.1</value>
+        <producer>
+            <company>HEYARU GROUP</company>
+            <headquarter>Belgium</headquarter>
+        </producer>
+        <production-date>2021-07-10</production-date>
+    </synthetic>
+
+</gems>

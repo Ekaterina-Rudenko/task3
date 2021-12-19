@@ -1,8 +1,5 @@
 package by.epam.task3.entity;
 
-import by.epam.task3.entity.enums.Country;
-import by.epam.task3.entity.enums.PreciousnessType;
-
 import java.time.LocalDate;
 
 public class NaturalGem extends AbstractGem {

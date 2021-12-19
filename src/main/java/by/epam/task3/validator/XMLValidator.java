@@ -14,16 +14,12 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 public class XMLValidator {
     static Logger logger = LogManager.getLogger();
-    private static final String SCHEMA_NAME = "data/gems.xsd";
 
-    public static boolean validateXMLFile(String fileXMLPath) throws GemException {
-        ClassLoader loader = XMLValidator.class.getClassLoader();
-        URL resource = loader.getResource(SCHEMA_NAME);
-        String schemaPath = new File(resource.getFile()).getAbsolutePath();
+
+    public static boolean validateXMLFile(String fileXMLPath, String schemaPath) throws GemException {
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
         SchemaFactory factory = SchemaFactory.newInstance(language);
         File schemaFile = new File(schemaPath);

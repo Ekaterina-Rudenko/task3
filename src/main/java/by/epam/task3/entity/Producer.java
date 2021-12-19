@@ -1,7 +1,5 @@
 package by.epam.task3.entity;
 
-import by.epam.task3.entity.enums.Country;
-
 public class Producer {
     private String company;
     private Country country;

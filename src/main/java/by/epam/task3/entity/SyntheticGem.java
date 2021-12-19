@@ -1,7 +1,5 @@
 package by.epam.task3.entity;
 
-import by.epam.task3.entity.enums.PreciousnessType;
-
 import java.time.LocalDate;
 
 public class SyntheticGem extends AbstractGem {
@@ -52,8 +50,13 @@ public class SyntheticGem extends AbstractGem {
         return result;
     }
 
+  /*  public static void main(String[] args) {
+        SyntheticGem sg = new SyntheticGem("hello", "world", PreciousnessType.PRECIOUS, null, 0, new Producer("te", Country.ALGERIA), LocalDate.of(2010, 10, 10));
+        System.out.println(sg);
+    }*/
     @Override
     public String toString() {
+        //String result = super.toString().split("\\{")[1].split("\\}")[0];
         final StringBuilder sb = new StringBuilder("\nSyntheticGem{");
         sb.append(" name=").append(this.getName());
         sb.append(", id=").append(this.getGemId());

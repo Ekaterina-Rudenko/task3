@@ -12,16 +12,20 @@ import java.net.URL;
 public class Main {
     static Logger logger = LogManager.getLogger();
     static final String FILE_XML_PATH = "data/gems.xml";
+    static final String SCHEMA_NAME = "data/gems.xsd";
     static final String TYPE_OF_PARSER_SAX = "Sax";
     static final String TYPE_OF_PARSER_STAX = "Stax";
+    static final String TYPE_OF_PARSER_DOM = "Dom";
 
     public static void main(String[] args) throws GemException {
         try {
             ClassLoader loader = Main.class.getClassLoader();
-            URL resource = loader.getResource(FILE_XML_PATH);
-            String filePath = new File(resource.getFile()).getAbsolutePath();
-            XMLValidator.validateXMLFile(filePath);
-            AbstractGemBuilder builder = BuilderFactory.createGemsBuilder(TYPE_OF_PARSER_STAX);
+            URL resourceXML = loader.getResource(FILE_XML_PATH);
+            String filePath = new File(resourceXML.getFile()).getAbsolutePath();
+            URL resourceXSD = loader.getResource(SCHEMA_NAME);
+            String schemaPath = new File(resourceXSD.getFile()).getAbsolutePath();
+            XMLValidator.validateXMLFile(filePath, schemaPath);
+            AbstractGemBuilder builder = BuilderFactory.createGemsBuilder(TYPE_OF_PARSER_DOM);
             builder.buildGems(filePath);
             logger.info(builder.getGems());
         } catch (GemException e) {
